@@ -1,3 +1,6 @@
+using COMP003B.FinalProject.PedroG.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace COMP003B.FinalProject.PedroG
 {
     public class Program
@@ -8,6 +11,9 @@ namespace COMP003B.FinalProject.PedroG
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseSqlServer("Name=ConnectionStrings:DefaultConnection"));
 
             var app = builder.Build();
 
