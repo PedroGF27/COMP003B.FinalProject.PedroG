@@ -2,12 +2,7 @@
 {
 	public class Booking
 	{
-		public int BookingId { get; set; }
+		public int BookingID { get; set; }
 
-		public string BookingTime { get; set; }
-
-		//public int MechanicId { get; set; }
-
-
-	}
+		public string Date { get; set; }
 }

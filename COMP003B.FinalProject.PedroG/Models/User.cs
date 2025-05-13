@@ -14,6 +14,7 @@ namespace COMP003B.FinalProject.PedroG.Models
 		public int Phone { get; set; }
 
 		[Required]
+		[EmailAddress]
 		public string Email { get; set; }
 
 		//public ICollection<Booking> Bookings { get; set; }

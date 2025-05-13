@@ -1,4 +1,6 @@
-﻿namespace COMP003B.FinalProject.PedroG.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace COMP003B.FinalProject.PedroG.Models
 {
 	public class Mechanic
 	{
@@ -8,8 +10,11 @@
 
 		public string MechanicDescription { get; set; }
 
+		[Required]
+		[EmailAddress]
 		public string MechanicEmail { get; set; }
 
+		[Required]
 		public string MechanicPhone { get; set; }
 	}
 }
