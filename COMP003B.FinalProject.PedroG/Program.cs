@@ -1,3 +1,7 @@
+// Author: Pedro Garcia
+// Course: COMP-003B: ASP.NET Core
+// Instructor: Jonathan Cruz
+// Purpose: Final project synthesizing MVC, Web API, EF Core, and middleware
 using COMP003B.FinalProject.PedroG.Data;
 using Microsoft.EntityFrameworkCore;
 
