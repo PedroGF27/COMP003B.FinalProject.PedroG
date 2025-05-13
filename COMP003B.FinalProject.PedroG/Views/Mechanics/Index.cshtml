@@ -1,0 +1,54 @@
+﻿@model IEnumerable<COMP003B.FinalProject.PedroG.Models.Mechanic>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MechanicName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MechanicDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MechanicEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MechanicPhone)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MechanicName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MechanicDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MechanicEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MechanicPhone)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MechanicId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.MechanicId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.MechanicId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
