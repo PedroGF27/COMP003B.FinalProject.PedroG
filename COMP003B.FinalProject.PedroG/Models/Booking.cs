@@ -2,7 +2,8 @@
 {
 	public class Booking
 	{
-		public int BookingID { get; set; }
+		public int BookingId { get; set; }
 
-		public string Date { get; set; }
+		public string BookingTime { get; set; }
+	}
 }

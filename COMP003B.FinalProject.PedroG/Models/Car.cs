@@ -7,13 +7,13 @@ namespace COMP003B.FinalProject.PedroG.Models
 		public int CarId { get; set; }
 
 		[Required]
-		public string Name { get; set; }
+		public string CarName { get; set; }
 
 		[Required]
-		public string Model { get; set; }
+		public string CarModel { get; set; }
 
 		[Required]
-		public int Year { get; set; }
+		public int CarYear { get; set; }
 
 		[Required]
 		public string LicensePlate { get; set; }
